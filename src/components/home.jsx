@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Cassete from "../assets/homeAssets/cassete.png";
 
-import CreativeDev from "../assets/homeAssets/cd.svg";
+import CreativeDev from "../assets/homeAssets/Cd.svg";
 import FilmReelImage from "../assets/homeAssets/roll.svg";
 import TicketMenuImage from "../assets/homeAssets/TicketMenuimg.png";
 import YellowLight from "../assets/homeAssets/yellowLight.svg";
