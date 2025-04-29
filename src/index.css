@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+html,
+body {
+  background-color: #fff8e7;
+  background-image: url("./assets/background.png");
+}
+
+.home,
+.about {
+  background-image: url("./assets/background.png");
+}
+
+.footer {
+  background-image: url("./assets/papertTexturebg.png");
+}
+
+.loaderpage {
+  background-image: url("./assets/papertTexturebg.png");
+}
+
+.menusection {
+  background-image: url("./assets/homeAssets/TicketMenuimg.png");
+}
+
+
+
+::selection{
+  background-color: #87392D;
+  color: #fff8e7;
+}
+
+
+@font-face {
+  font-family: "DelaGothicOne";
+  src: url("./assets/font/DelaGothicOne-Regular.woff2") format("truetype"); /* Adjust path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dela-gothic-one {
+  font-family: "DelaGothicOne", sans-serif;
+}
+
+@font-face {
+  font-family: "AeonikRegular";
+  src: url("./assets/font/Aeonik-Regular.133c8d5a0dd65f35129e.woff2")
+    format("truetype"); /* Adjust path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.architects-daughter {
+  font-family: "ArchitectsDaughter", sans-serif;
+}
+
+@font-face {
+  font-family: "ArchitectsDaughter";
+  src: url("./assets/font/ArchitectsDaughter.woff2") format("truetype"); /* Adjust path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.architects-daughter {
+  font-family: "ArchitectsDaughter", sans-serif;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.orbit {
+  animation: orbit 20s linear infinite;
+}
+
+@keyframes orbitt {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.orbitt {
+  animation: orbit 5s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-90%);
+  }
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
