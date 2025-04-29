@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import Cassete from "../assets/homeAssets/cassete.png";
-
+import Cd from '../assets/homeAssets/Caset.png'
 import CreativeDev from "../assets/homeAssets/Cd.svg";
 import FilmReelImage from "../assets/homeAssets/roll.svg";
 import TicketMenuImage from "../assets/homeAssets/TicketMenuimg.png";
