@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import Cassete from "../assets/homeAssets/cassete.png";
-import Cd from "../assets/homeAssets/caset.png";
+
 import CreativeDev from "../assets/homeAssets/cd.svg";
 import FilmReelImage from "../assets/homeAssets/roll.svg";
 import TicketMenuImage from "../assets/homeAssets/TicketMenuimg.png";
@@ -115,7 +115,8 @@ const home = () => {
 
   return (
     <>
-      <div id="home"
+      <div
+        id="home"
         onClick={play}
         className="home w-full h-full bg-[#fff8e7] overflow-x-hidden "
       >
@@ -161,7 +162,8 @@ const home = () => {
               >
                 About
               </a>
-              <Link to={'/about'}
+              <Link
+                to={"/about"}
                 href="/about "
                 className="group-hover:-translate-y-[3vw] duration-500 "
               >
@@ -176,7 +178,8 @@ const home = () => {
               >
                 Work
               </a>
-              <Link to={'/work'}
+              <Link
+                to={"/work"}
                 href="/work "
                 className="group-hover:-translate-y-[3vw] duration-500 "
               >
@@ -214,10 +217,7 @@ const home = () => {
               Github
             </a>
             <span>|</span>
-            <Link to={'/interactive'}
-              
-              className="hover:scale-110"
-            >
+            <Link to={"/interactive"} className="hover:scale-110">
               Fun
             </Link>
           </div>
@@ -248,7 +248,7 @@ const home = () => {
 
             <button
               onClick={() => setMenuOpen(true)}
-              className="flex bg-[#843F2E] px-2 md:px-[1vw] py-1 md:py-[0.35vw] text-sm md:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] shadow-[-3px_3px_0_rgba(0,0,0,1)] md:shadow-[-5px_5px_0_rgba(0,0,0,1)] cursor-pointer transition-all hover:shadow-[-2px_2px_0_rgba(0,0,0,1)] hover:bg-[#A95F4E]"
+              className="flex bg-[#843F2E]  px-2 md:px-[1vw] py-1 md:py-[0.35vw] text-sm md:text-[2vw] lg:text-[1.5vw] xl:text-[1.1vw] shadow-[-3px_3px_0_rgba(0,0,0,1)] md:shadow-[-5px_5px_0_rgba(0,0,0,1)] cursor-pointer transition-all hover:shadow-[-2px_2px_0_rgba(0,0,0,1)] hover:bg-[#A95F4E]"
             >
               Menu
             </button>

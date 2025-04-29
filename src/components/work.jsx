@@ -153,12 +153,9 @@ const work = () => {
             </div>
             <p
               ref={FirstP}
-              className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0"
+              className="text-[1.4vw] translate-y-[5vw] mt-[0.7vw] opacity-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-              inventore ea fugit nam numquam, doloremque rerum iste recusandae
-              odio ducimus ullam, natus atque amet! Fugit sapiente atque
-              reprehenderit tempore distinctio?
+             Max Milkin Clone is a portfolio website clone built using React, GSAP for smooth animations, and Tailwind CSS for utility-first styling. The project focuses on replicating the clean, modern aesthetic of Max Milkin's original design. It helped me practice integrating animations and advanced UI effects with React.
             </p>
           </div>
         </div>
