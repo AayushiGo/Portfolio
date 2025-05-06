@@ -28,15 +28,15 @@ const ScrollToSection = () => {
 const App = () => {
   return (
     <Router>
-      <Loader>
+      {/* <Loader> */}
         <Cursor />
         <ScrollToSection />
-        <Home />
-        <About />
+        {/* <Home /> */}
+        {/* <About /> */}
         <Work />
         <Interactive />
         <Footer />
-      </Loader>
+      {/* </Loader> */}
     </Router>
   );
 };

@@ -113,12 +113,12 @@ const work = () => {
   }, []);
 
   return (
-    <div id="work" className="about bg-[#fff8e7] flex items-start justify-center p-[4vw]">
-      <section className=" flex flex-col items-center justify-center ">
+    <div id="work" className="about bg-[#fff8e7] flex items-start justify-center  md:p-[4vw]">
+      <section className=" flex flex-col items-center justify-center  mt-[7vw] md:mt-0 ">
         <div className="h-fit overflow-hidden">
           <h1
             ref={workHeadingRef}
-            className="dela-gothic-one text-[2.5vw] text-[#87392D] translate-y-[3vw] "
+            className="dela-gothic-one text-[4vw] md:text-[2.5vw] text-[#87392D] translate-y-[3vw] "
           >
             Works
           </h1>
@@ -126,7 +126,7 @@ const work = () => {
 
         {/* first */}
 
-        <div className="flex mt-[10vw]  gap-[9vw]  ">
+        <div className="flex mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100 ">
           <div
             ref={FirstV}
             className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
@@ -162,7 +162,7 @@ const work = () => {
 
         {/* second */}
 
-        <div className="flex mt-[15vw]  gap-[9vw]  ">
+        <div className="flex mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100 ">
           <div className="max-w-[35vw] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
               <h1 ref={SecondH} className="-translate-y-[3vw]">
@@ -199,7 +199,7 @@ const work = () => {
         </div>
 
         {/* third */}
-        <div className="flex mt-[15vw]  gap-[9vw]  ">
+        <div className="flex mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100  ">
           <div
             ref={ThirdV}
             className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
@@ -237,7 +237,7 @@ const work = () => {
         </div>
 
         {/* fourthd */}
-        <div className="flex mt-[15vw]  gap-[9vw] mb-[10vw]  ">
+        <div className="flex mb-[15vw] mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100  ">
           <div className="max-w-[35vw] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
               <h1 ref={FourthH} className="translate-y-[3vw]">
@@ -284,3 +284,9 @@ export default work;
 
 
 
+
+ 
+
+// flex mt-[15vw]  gap-[9vw] mb-[10vw] 
+
+// flex mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100 

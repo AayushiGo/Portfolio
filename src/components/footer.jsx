@@ -227,12 +227,12 @@ const footer = () => {
       />
 
       <section className="flex flex-col items-center justify-start mt-[10vw] ">
-        <h1 ref={headingRef} className="dela-gothic-one scale-0  text-[#fff8e7] text-[3vw] max-w-[40%] text-center">
+        <h1 ref={headingRef} className="dela-gothic-one scale-0  text-[#fff8e7] text-[3.5vw] md:text-[3vw] max-w-[40%] text-center">
           Let's roll credits on your next big idea.
         </h1>
         <button
           ref={buttonRef}
-          className="mt-[2.5vw] text-[2vw] px-2 py-1 scale-0   dela-gothic-one text-[#843F2E] md:flex bg-[#fff8e7] lg:px-4  lg:py-2 xl:px-6 xl:py-3  lg:text-4xl  shadow-[-7px_7px_0_rgba(0,0,0,1)] cursor-pointer  hover:shadow-[-4px_4px_0_rgba(0,0,0,1)] hover:bg-[#F5EBDD]"
+          className="md:mt-[2.5vw] mt-[2.7vw] text-[2.2vw] px-2 py-1 scale-0   dela-gothic-one text-[#843F2E] md:flex bg-[#fff8e7] lg:px-4  lg:py-2 xl:px-6 xl:py-3  lg:text-4xl  shadow-[-7px_7px_0_rgba(0,0,0,1)] cursor-pointer  hover:shadow-[-4px_4px_0_rgba(0,0,0,1)] hover:bg-[#F5EBDD]"
         ><a href="mailto:aayushigorania@gmail.com">Let's build</a>
           
         </button>

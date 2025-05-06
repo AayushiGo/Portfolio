@@ -60,13 +60,13 @@ const Interactive = () => {
 
           tl.to(noticeRef.current, {
             scale: 1,
-            duration: 2,
+            duration: 1.2,
             ease: "back.out",
           });
 
           tl.to(flagRef.current, {
             opacity: 1,
-            duration: 0.5,
+            duration: 0.1,
           });
 
           tl.to(paperRef.current, {
@@ -81,6 +81,7 @@ const Interactive = () => {
 
           tl.to(stickynoteRef.current, {
             scale: 1,
+            
           });
 
           tl.to(filmR2Ref.current, {
