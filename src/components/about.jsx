@@ -120,17 +120,17 @@ const About = () => {
 
         <div
           ref={vintagePaperRef}
-          className="flex opacity-0 items-center  justify-center relative mt-[5vw] md:mt-[0vw] scale-130 md:scale-100"
+          className="flex opacity-0 items-center   justify-center relative mt-[5vw] md:mt-[0vw] scale-130 md:scale-100"
         >
-          <img className="w-[55vw] select-none  " src={VintagePaper} alt="" />
+          <img className="w-[55vw] select-none mt-[7vw] md:mt-[0vw] rotate-90 md:rotate-0 scale-110 md:scale-100  " src={VintagePaper} alt="" />
           <img
             ref={posterRef}
-            className="-ml-[14vw] md:-ml[17vw] mb-[14vw] opacity-0  h-[35vw]  transition-all duration-1000 select-none"
+            className="-ml-[14vw] md:-ml[17vw] mb-[14vw] opacity-0 z-10  h-[37vw]   transition-all duration-1000 select-none"
             src={poster}
             alt="Poster"
           />
 
-          <div className="architects-daughter  absolute top-[13vw] left-[7vw]  leading-[2.1vw] tracking-wide text-[#280a05] text-[1.5vw] md:text-[1.3vw] a">
+          <div className="architects-daughter  absolute top-[13vw]  max-w-[52%] md:max-w-[90%]   left-[9vw] md:left-[7vw]  leading-[2.6vw] md:leading-[2.1vw] tracking-wide text-[#280a05] text-[1.7vw] md:text-[1.4vw] ">
             <h1 ref={headingOneRef} className=" translate-y-24 opacity-0">
               Hi, I'm Aayushi — <br /> Designer, developer, and motion
               enthusiast.
@@ -138,7 +138,7 @@ const About = () => {
 
             <h1
               ref={headingTwoRef}
-              className="mt-[2vw] max-w-[60%] translate-y-24 opacity-0  "
+              className="mt-[2vw]  md:max-w-[60%] translate-y-24 opacity-0  "
             >
               I craft animated websites that feel alive—where every scroll,
               hover, and transition tells a story. Blending creativity with
@@ -160,7 +160,7 @@ const About = () => {
             </button>
             <img
               ref={stampRef}
-              className="ml-[42vw] mt-[2vw] w-[7vw] -rotate-12 scale-0 orbit"
+              className="ml-[36vw] md:ml-[42vw]  mt-[2vw] w-[7vw] -rotate-12 scale-0 orbit"
               src={stamp}
               alt=""
             />

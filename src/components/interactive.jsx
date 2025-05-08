@@ -81,7 +81,6 @@ const Interactive = () => {
 
           tl.to(stickynoteRef.current, {
             scale: 1,
-            
           });
 
           tl.to(filmR2Ref.current, {
@@ -147,11 +146,14 @@ const Interactive = () => {
   }, []);
 
   return (
-    <div id="interactive" className="flex items-center justify-center overflow-hidden py-[10vw]">
+    <div
+      id="interactive"
+      className="flex items-center  justify-center overflow-hidden py-[35vw] md:py-[5vw]  mb-[2vw] select-none "
+    >
       <div ref={noticeRef} className=" relative w-[70vw]  scale-0">
         {/* notice board */}
         <img
-          className=" w-full relative "
+          className=" w-full scale-150 md:scale-100 relative rotate-90 md:rotate-0 "
           src={NoticeBoardimg}
           alt="Notice Board"
         />
@@ -159,7 +161,7 @@ const Interactive = () => {
         {/* Flag */}
         <img
           ref={flagRef}
-          className="flags absolute w-[43vw] bottom-[21vw] -left-[8vw] z-10 opacity-0 "
+          className="flags absolute w-[43vw] scale-125 bottom-[32vh] -left-[6vw] md:bottom-[21vw] md:-left-[8vw] z-10 opacity-0 "
           src={Flag}
           alt=""
         />
@@ -167,7 +169,7 @@ const Interactive = () => {
         {/* Stamp */}
         <img
           ref={postRef}
-          className="absolute w-[19vw] bottom-[23vw] left-[20vw] rotate-3 z-10 scale-0"
+          className="absolute w-[28vw]  left-[39vw] md:w-[19vw] bottom-[10vw]  md:bottom-[23vw] md:left-[20vw] rotate-3 z-10 scale-0"
           src={PostStamp}
           alt=""
         />
@@ -175,26 +177,28 @@ const Interactive = () => {
         {/* Paper */}
         <div ref={paperRef} className="opacity-0">
           <img
-            className="absolute w-[33vw] bottom-[7vw] -left-[3vw] -rotate-1 z-0"
+            className="absolute scale-125 md:scale-100 w-[33vw] bottom-[30vw] left-[1vw] md:bottom-[7vw] md:-left-[3vw] md:-rotate-1 rotate-8  z-0"
             src={Paper}
             alt=""
           />
-          <div className="absolute top-[16vw] left-[6.7vw] text-[1vw] flex flex-col items-start gap-[0.4vw] architects-daughter -rotate-3">
-            <h1 className="text-[1.7vw]">Skills</h1>
-            <li>Front-end Development</li>
-            <li>Creative Development</li>
-            <li>Web Design</li>
+          <div className="absolute -top-[9vw]  left-[9.5vw] md:top-[16vw] md:left-[6.7vw] text-[1vw] flex flex-col items-start gap-[0.4vw] architects-daughter md:-rotate-3 rotate-5 ">
+            <h1 className="text-[2vw] md:text-[1.7vw]">Skills</h1>
+            <li className="text-[1.2vw] md:text-[1vw]">
+              Front-end Development
+            </li>
+            <li className="text-[1.2vw] md:text-[1vw]">Creative Development</li>
+            <li className="text-[1.2vw] md:text-[1vw]">Web Design</li>
           </div>
         </div>
 
         {/* Calendar */}
         <div ref={calendarRef} className="opacity-0">
           <img
-            className="absolute w-[15vw] bottom-[22vw] left-[51vw] "
+            className="absolute w-[24vw] bottom-[37vw] left-[42vw] md:w-[15vw] md:bottom-[22vw] md:left-[51vw] "
             src={Calendar}
             alt=""
           />
-          <div className="absolute top-[18vw] left-[56vw] text-[1vw] flex flex-col items-end justify-center gap-[0.4vw] architects-daughter">
+          <div className="absolute top-[0vw] left-[50vw] md:top-[18vw] md:left-[56vw] text-[1.6vw] md:text-[1vw] flex flex-col items-end justify-center gap-[0.4vw] architects-daughter">
             <h1>Located in India</h1>
             <h1>{time.toLocaleTimeString()}</h1>
             <h1>{time.toLocaleDateString()}</h1>
@@ -204,7 +208,7 @@ const Interactive = () => {
         {/* Film roll */}
         <img
           ref={filmR2Ref}
-          className="absolute w-[19vw] bottom-[24.5vw] left-[34.3vw] opacity-0"
+          className="absolute w-[27vw] bottom-[26vw] left-[23vw] md:w-[19vw] md:bottom-[24.5vw] md:left-[34.3vw] opacity-0"
           src={FilmRoll2}
           alt=""
         />
@@ -212,7 +216,7 @@ const Interactive = () => {
         {/* Film roll */}
         <img
           ref={filmR1Ref}
-          className="absolute w-[18vw] bottom-[28vw] left-[34vw] opacity-0"
+          className="absolute w-[27vw] bottom-[31vw] left-[22vw] md:w-[18vw] md:bottom-[28vw] md:left-[34vw] opacity-0"
           src={FilmRoll1}
           alt=""
         />
@@ -220,7 +224,7 @@ const Interactive = () => {
         {/* cinema ticket */}
         <img
           ref={cinematicketRef1}
-          className="absolute w-[14vw] bottom-[6vw] left-[4vw] z-10 opacity-0"
+          className="absolute  w-[26vw] bottom-[19vw] left-[2vw] md:w-[14vw] md:bottom-[6vw] md:left-[4vw]  opacity-0"
           src={CinemaTicket}
           alt=""
         />
@@ -228,7 +232,7 @@ const Interactive = () => {
         {/* cinema ticket */}
         <img
           ref={cinematicketRef2}
-          className="absolute w-[14vw] bottom-[5vw] left-[4vw] opacity-0  "
+          className="absolute w-[26vw] bottom-[18vw]  left-[2vw] md:w-[14vw] md:bottom-[5vw] md:left-[4vw] z-10 opacity-0  "
           src={CinemaTicket}
           alt=""
         />
@@ -236,7 +240,7 @@ const Interactive = () => {
         {/* vintage car */}
         <img
           ref={carRef}
-          className="absolute w-[20vw] -bottom-[8vw] -left-[7vw] -rotate-3 opacity-0"
+          className="absolute w-[36vw] -left-[11vw] top-[35vh] md:w-[20vw] md:-bottom-[8vw] md:-left-[7vw] -rotate-3 opacity-0"
           src={CarImage}
           alt=""
         />
@@ -244,7 +248,7 @@ const Interactive = () => {
         {/* ukelele  */}
         <img
           ref={ukeleleRef}
-          className="absolute w-[20vw] -bottom-[1vw] left-[55vw] opacity-0"
+          className="absolute w-[30vw] left-[47vw] md:w-[20vw] md:-bottom-[1vw] md:left-[55vw] opacity-0"
           src={UkeleleImage}
           alt=""
         />
@@ -253,7 +257,7 @@ const Interactive = () => {
 
         <img
           ref={wantedRef}
-          className="absolute w-[14vw] bottom-[3vw] left-[45vw] opacity-0"
+          className="absolute w-[23vw] left-[35vw] -bottom-[20vw] md:w-[14vw] md:bottom-[3vw] md:left-[45vw] opacity-0"
           src={Wanted}
           alt=""
         />
@@ -261,11 +265,11 @@ const Interactive = () => {
         {/* sticky note */}
         <div className="scale-0" ref={stickynoteRef}>
           <img
-            className="absolute w-[20vw] bottom-[4vw] left-[21vw]"
+            className="absolute w-[33vw] -bottom-[15vw]  md:w-[20vw] md:bottom-[4vw] md:left-[21vw]"
             src={Stickynote}
             alt=""
           />
-          <h1 className="architects-daughter text-[1.5vw] text-center absolute bottom-[10.5vw] left-[27.5vw] -rotate-3">
+          <h1 className="architects-daughter text-[2.2vw] left-[11vw] -bottom-[5vw] md:text-[1.5vw] text-center absolute md:bottom-[10.5vw] md:left-[27.5vw] -rotate-3">
             Creating <br /> something <br /> alive!
           </h1>
         </div>
@@ -273,35 +277,35 @@ const Interactive = () => {
         {/* figma pin */}
         <img
           src={Figmapin}
-          className="absolute w-[7vw] bottom-[4vw] left-[17vw] hover:scale-110 transition-all"
+          className="absolute w-[15vw] left-[17vw] -bottom-[20vw] md:w-[7vw] md:bottom-[4vw] md:left-[17vw] hover:scale-110 transition-all"
           alt=""
         />
 
         {/* html pin */}
         <img
           src={Htmlpin}
-          className="absolute w-[6.5vw] bottom-[24vw] left-[37vw] hover:scale-110 transition-all"
+          className="absolute w-[12vw] left-[20vw] bottom-[10vw] md:w-[6.5vw] md:bottom-[24vw] md:left-[37vw] hover:scale-110 transition-all"
           alt=""
         />
 
         {/* css pin */}
         <img
           src={Csspin}
-          className="absolute w-[6.5vw] bottom-[38vw] left-[41vw] hover:scale-110 transition-all"
+          className="absolute w-[10vw] md:w-[6.5vw] bottom-[52vw] left-[30vw] md:bottom-[38vw] md:left-[41vw] hover:scale-110 transition-all"
           alt=""
         />
 
         {/* react pin */}
         <img
           src={Reactpin}
-          className="absolute w-[6.5vw] bottom-[15vw] left-[40vw] hover:scale-110 transition-all"
+          className="absolute w-[11vw] bottom-[20vw] left-[29vw] md:w-[6.5vw] md:bottom-[15vw] md:left-[40vw] hover:scale-110 transition-all"
           alt=""
         />
 
         {/* gsap pin */}
         <img
           src={Gsappin}
-          className="absolute w-[6.5vw] bottom-[4vw] left-[35vw] hover:scale-110 transition-all"
+          className="absolute w-[12vw] left-[26vw] -bottom-[5vw] md:w-[6.5vw] md:bottom-[4vw] md:left-[35vw] hover:scale-110 transition-all"
           alt=""
         />
 
@@ -323,7 +327,7 @@ const Interactive = () => {
           <img
             id="plane"
             src={Plane}
-            className="absolute w-[16vw] top-[4vw] left-[10vw]  z-50"
+            className="absolute w-[25vw] md:w-[16vw] top-[4vw] left-[10vw]  z-50"
             alt=""
           />
         </div>

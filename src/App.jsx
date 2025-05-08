@@ -33,9 +33,9 @@ const App = () => {
         <ScrollToSection />
         {/* <Home /> */}
         {/* <About /> */}
-        <Work />
+        {/* <Work /> */}
         <Interactive />
-        <Footer />
+        {/* <Footer /> */}
       {/* </Loader> */}
     </Router>
   );

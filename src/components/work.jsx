@@ -3,7 +3,7 @@ import gsap from "gsap";
 import SundeownVideo from "../assets/workAssets/Sundown Studio.mp4";
 import RainDelayVideo from "../assets/workAssets/Rain Delay Media.mp4";
 import MaxMilkinVideo from "../assets/workAssets/max milkin.mp4";
-import NikeVideo from '../assets/workAssets/Nike Reimagine.mp4'
+import NikeVideo from "../assets/workAssets/Nike Reimagine.mp4";
 import filmStripImg from "../assets/workAssets/filmstrip.png";
 
 const work = () => {
@@ -72,12 +72,11 @@ const work = () => {
     if (workHeadingRef.current) {
       gsap.to(workHeadingRef.current, {
         y: 0,
-        duration: 0.6,
-        ease: "bounce.out",
+        duration: 1,
+        ease: "power2",
         scrollTrigger: {
           trigger: workHeadingRef.current,
           start: "top 80%",
-          once: true,
         },
       });
     }
@@ -109,11 +108,13 @@ const work = () => {
       heading: FourthH.current,
       paragraph: FourthP.current,
     });
-
   }, []);
 
   return (
-    <div id="work" className="about bg-[#fff8e7] flex items-start justify-center  md:p-[4vw]">
+    <div
+      id="work"
+      className="about bg-[#fff8e7] flex items-start justify-center mt-[10vw] md:mt-[1vw]  "
+    >
       <section className=" flex flex-col items-center justify-center  mt-[7vw] md:mt-0 ">
         <div className="h-fit overflow-hidden">
           <h1
@@ -126,7 +127,7 @@ const work = () => {
 
         {/* first */}
 
-        <div className="flex mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100 ">
+        <div className="flex  mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100 ">
           <div
             ref={FirstV}
             className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
@@ -155,7 +156,11 @@ const work = () => {
               ref={FirstP}
               className="text-[1.4vw] translate-y-[5vw] mt-[0.7vw] opacity-0"
             >
-             Max Milkin Clone is a portfolio website clone built using React, GSAP for smooth animations, and Tailwind CSS for utility-first styling. The project focuses on replicating the clean, modern aesthetic of Max Milkin's original design. It helped me practice integrating animations and advanced UI effects with React.
+              Max Milkin Clone is a portfolio website clone built using React,
+              GSAP for smooth animations, and Tailwind CSS for utility-first
+              styling. The project focuses on replicating the clean, modern
+              aesthetic of Max Milkin's original design. It helped me practice
+              integrating animations and advanced UI effects with React.
             </p>
           </div>
         </div>
@@ -272,8 +277,6 @@ const work = () => {
             ></video>
           </div>
         </div>
-
-
       </section>
     </div>
   );
@@ -281,12 +284,6 @@ const work = () => {
 
 export default work;
 
+// flex mt-[15vw]  gap-[9vw] mb-[10vw]
 
-
-
-
- 
-
-// flex mt-[15vw]  gap-[9vw] mb-[10vw] 
-
-// flex mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100 
+// flex mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100
