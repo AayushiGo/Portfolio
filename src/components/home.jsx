@@ -118,7 +118,7 @@ const home = () => {
       <div
         id="home"
         onClick={play}
-        className="home w-full h-full bg-[#fff8e7] overflow-x-hidden "
+        className="home w-full min-h-screen  bg-[#b09762] overflow-x-hidden "
       >
         {/* Menu */}
         <div
@@ -189,7 +189,7 @@ const home = () => {
           </ul>
 
           {/*Menu Footer Links */}
-          <div className="aonik-regular text-[#fff8e7] text-[1vw] flex flex-wrap gap-[1.2vw] justify-center z-50 mb-[1vw]">
+          <div className="aeonik-regular text-[#fff8e7] text-[1vw] flex flex-wrap gap-[1.2vw] justify-center z-50 mb-[1vw]">
             <a
               href="mailto:aayushigorania@gmail.com"
               target="_blank"
@@ -272,7 +272,7 @@ const home = () => {
           <img
             src={Cassete}
             ref={cassetteRef}
-            className=" absolute opacity-0  w-[8vw] left-[77vw] top-[27vw] md:top-[23vw] lg:top-[19vw] xl:top-[16vw] rotate-12  "
+            className=" absolute opacity-0 hidden md:flex w-[8vw] left-[77vw] top-[27vw] md:top-[23vw] lg:top-[19vw] xl:top-[16vw] rotate-12  "
             alt=""
           />
 
@@ -284,7 +284,7 @@ const home = () => {
         </section>
 
         {/* Marquee */}
-        <div className="relative mt-[8vw]  w-full marquee">
+        <div className="relative mt-[68vw] md:mt-[20vw] lg:mt-[7vw] scale-200 md:scale-125 lg:scale-100  w-full marquee">
           {/* Background Reel Images */}
           <div className="flex items-center justify-center -z-10">
             <img className="mt-2" src={FilmReelImage} alt="Film Reel" />

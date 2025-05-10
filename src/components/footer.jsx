@@ -246,14 +246,14 @@ const footer = () => {
 
       <section
         ref={linksRef}
-        className="flex flex-col lg:flex-row opacity-0  gap-[1vh]  mt-[31vw] md:mt-[23vw] lg:mt-[18vw]  items-center justify-between aonik-regular text-[#fff8e7] px-[2.5vw] "
+        className="flex flex-col lg:flex-row opacity-0  gap-[1vh]  mt-[31vw] md:mt-[23vw] lg:mt-[18vw]  items-center justify-between  text-[#fff8e7] px-[2.5vw] "
       >
         <div className="">
-          <h1 className=" text-[1.2vw]   hidden lg:flex ">
+          <h1 className=" text-[1.2vw] aeonik-regular  hidden lg:flex  ">
             © 2025 Aayushi Gorania. All popcorns reserved.
           </h1>
         </div>
-        <div className="list-none  lg:ml-[40vw] ">
+        <div className="list-none  lg:ml-[40vw] aeonik-regular ">
           <ul className="flex gap-[3vw] md:gap-[2vw] lg:gap-[1vw]  items-center text-center text-[2.4vw] md:text-[2vw] lg:text-[1.2vw]  ">
             <li className=" h-[2vh] md:h-[3.2vh] px-1  w-full  overflow-hidden flex flex-col group transition-all  ease-in-out ">
               <a
