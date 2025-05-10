@@ -215,11 +215,11 @@ const footer = () => {
   return (
     <div
       id="footer"
-      className="footer bg-black relative overflow-hidden mt-[5vh] min-h-[60vh] py-[2vw] rounded-t-3xl "
+      className="footer bg-black relative flex flex-col  items-center justify-between   overflow-hidden mt-[5vh] min-h-[60vh] py-[2vw] rounded-t-3xl "
     >
       <img
         ref={lightRef}
-        className="YellowLight absolute w-[30vw] -top-[9vw] left-[5vw] rotate-3"
+        className="YellowLight absolute w-[60vw] md:w-[40vw] lg:w-[30vw] -top-[9vw] left-[5vw] rotate-3"
         src={YellowLight}
         alt=""
       />
@@ -227,7 +227,7 @@ const footer = () => {
       <section className="flex  flex-col items-center justify-start mt-[13vw] md:mt-[10vw] ">
         <h1
           ref={headingRef}
-          className="dela-gothic-one scale-0  text-[#fff8e7] text-[6vw] md:text-[4vw] max-w-[70%] md:max-w-[50%] text-center"
+          className="dela-gothic-one scale-0  text-[#fff8e7] text-[6vw] md:text-[4vw] max-w-[70%] md:max-w-[60%] text-center"
         >
           Let's roll credits on your next big idea.
         </h1>
@@ -246,9 +246,9 @@ const footer = () => {
 
       <section
         ref={linksRef}
-        className="flex flex-col lg:flex-row opacity-0  gap-[1vh]  mt-[31vw] md:mt-[23vw] lg:mt-[18vw]  items-center justify-between  text-[#fff8e7] px-[2.5vw] "
+        className="flex flex-col  lg:flex-row opacity-0  gap-[1vh]   md:mt-[23vw] lg:mt-[18vw]  items-center justify-between  text-[#fff8e7] px-[2.5vw] "
       >
-        <div className="">
+        <div className=" w-full">
           <h1 className=" text-[1.2vw] aeonik-regular  hidden lg:flex  ">
             © 2025 Aayushi Gorania. All popcorns reserved.
           </h1>
@@ -312,7 +312,7 @@ const footer = () => {
                 Github
               </a>
             </li>
-            
+
             <div className="hidden lg:flex flex-col items-center z-50 scale-55 md:scale-100 lg:scale-200 ml-[1vw]  ">
               <img ref={logoRef} src={logoTop} alt="Logo Top" />
               <img

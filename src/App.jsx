@@ -28,7 +28,7 @@ const ScrollToSection = () => {
 const App = () => {
   return (
     <Router>
-      <Loader>
+      {/* <Loader> */}
         <Cursor />
         <ScrollToSection />
         <Home />
@@ -36,7 +36,7 @@ const App = () => {
         <Work />
         <Interactive />
         <Footer />
-      </Loader>
+      {/* </Loader> */}
     </Router>
   );
 };

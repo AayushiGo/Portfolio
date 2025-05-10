@@ -113,7 +113,7 @@ const work = () => {
   return (
     <div
       id="work"
-      className="about bg-[#fff8e7] flex items-start justify-center mt-[10vw] md:mt-[1vw]  "
+      className="about bg-[#fff8e7] flex items-start justify-center mt-[10vh] md:mt-[1vw]  "
     >
       <section className=" flex flex-col items-center justify-center  mt-[7vw] md:mt-0 ">
         <div className="h-fit overflow-hidden">
@@ -127,13 +127,13 @@ const work = () => {
 
         {/* first */}
 
-        <div className="flex  mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100 ">
+        <div className="flex flex-col mt-[30vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
           <div
             ref={FirstV}
             className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
           >
             <img
-              className="w-[34vw] absolute  -rotate-6 z-10"
+              className="w-[34vw] absolute  md:-rotate-6 z-10"
               src={filmStripImg}
               alt=""
             />
@@ -141,12 +141,12 @@ const work = () => {
               autoPlay
               muted
               loop
-              className="w-[31vw] mt-[2.7vw] ml-[2vw] -rotate-6 z-0  "
+              className="w-[31vw] mt-[2.7vw] ml-[2vw] md:-rotate-6 z-0  "
               src={MaxMilkinVideo}
             ></video>
           </div>
 
-          <div className="max-w-[35vw] ">
+          <div className="max-w-[35vw] mb-[10vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
               <h1 ref={FirstH} className="translate-y-[3vw]">
                 Max Milkin Portfolio Clone
@@ -154,7 +154,7 @@ const work = () => {
             </div>
             <p
               ref={FirstP}
-              className="text-[1.4vw] translate-y-[5vw] mt-[0.7vw] opacity-0"
+              className="text-[1.4vw] translate-y-[5vw] mt-[0.7vw] opacity-0 hidden md:flex"
             >
               Max Milkin Clone is a portfolio website clone built using React,
               GSAP for smooth animations, and Tailwind CSS for utility-first
@@ -167,16 +167,16 @@ const work = () => {
 
         {/* second */}
 
-        <div className="flex mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100 ">
-          <div className="max-w-[35vw] ">
+        <div className="flex flex-col-reverse mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
+          <div className="max-w-[35vw] mb-[10vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
-              <h1 ref={SecondH} className="-translate-y-[3vw]">
+              <h1 ref={SecondH} className="translate-y-[3vw]">
                 Rain Delay Media Clone
               </h1>
             </div>
             <p
               ref={SecondP}
-              className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0"
+              className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0 hidden md:flex"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
               inventore ea fugit nam numquam, doloremque rerum iste recusandae
@@ -186,10 +186,10 @@ const work = () => {
           </div>
           <div
             ref={SecondV}
-            className="translate-y-[7vw] translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] mt-[5vh] translate-x-[7vw] opacity-0"
           >
             <img
-              className="w-[34vw] absolute  rotate-6 z-10"
+              className="w-[34vw] absolute  md:rotate-6 z-10"
               src={filmStripImg}
               alt=""
             />
@@ -197,20 +197,20 @@ const work = () => {
               autoPlay
               muted
               loop
-              className="w-[31vw] mt-[2.7vw] ml-[2vw] rotate-6 z-0  "
+              className="w-[31vw] mt-[2.7vw] ml-[2vw] md:rotate-6 z-0  "
               src={RainDelayVideo}
             ></video>
           </div>
         </div>
 
         {/* third */}
-        <div className="flex mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100  ">
+        <div className="flex flex-col mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100  ">
           <div
             ref={ThirdV}
-            className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] mt-[5vh] -translate-x-[7vw] opacity-0"
           >
             <img
-              className="w-[34vw] absolute  -rotate-6 z-10"
+              className="w-[34vw] absolute  md:-rotate-6 z-10"
               src={filmStripImg}
               alt=""
             />
@@ -218,12 +218,12 @@ const work = () => {
               autoPlay
               muted
               loop
-              className="w-[31vw] mt-[2.7vw] ml-[2vw] -rotate-6 z-0  "
+              className="w-[31vw] mt-[2.7vw] ml-[2vw] md:-rotate-6 z-0  "
               src={SundeownVideo}
             ></video>
           </div>
 
-          <div className="max-w-[35vw] ">
+          <div className="max-w-[35vw] mb-[10vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
               <h1 ref={ThirdH} className="translate-y-[3vw]">
                 Sundow Studio Clone
@@ -231,7 +231,7 @@ const work = () => {
             </div>
             <p
               ref={ThirdP}
-              className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0"
+              className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0 hidden md:flex"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
               inventore ea fugit nam numquam, doloremque rerum iste recusandae
@@ -242,8 +242,8 @@ const work = () => {
         </div>
 
         {/* fourthd */}
-        <div className="flex mb-[15vw] mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-125 md:scale-110 lg:scale-100  ">
-          <div className="max-w-[35vw] ">
+        <div className="flex flex-col-reverse mb-[15vw] mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100  ">
+          <div className="max-w-[35vw] mb-[5vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
               <h1 ref={FourthH} className="translate-y-[3vw]">
                 Nike Reimagine
@@ -251,7 +251,7 @@ const work = () => {
             </div>
             <p
               ref={FourthP}
-              className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0"
+              className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0 hidden md:flex"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
               inventore ea fugit nam numquam, doloremque rerum iste recusandae
@@ -261,10 +261,10 @@ const work = () => {
           </div>
           <div
             ref={FourthV}
-            className="translate-y-[7vw] translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] mt-[2vh] translate-x-[7vw] opacity-0"
           >
             <img
-              className="w-[34vw] absolute  rotate-6 z-10"
+              className="w-[34vw] absolute  md:rotate-6 z-10"
               src={filmStripImg}
               alt=""
             />
@@ -272,7 +272,7 @@ const work = () => {
               autoPlay
               muted
               loop
-              className="w-[31vw] mt-[2.7vw] ml-[2vw] rotate-6 z-0  "
+              className="w-[31vw] mt-[2.7vw] ml-[2vw] md:rotate-6 z-0  "
               src={NikeVideo}
             ></video>
           </div>

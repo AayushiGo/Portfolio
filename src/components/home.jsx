@@ -2,13 +2,16 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import Cassete from "../assets/homeAssets/cassete.png";
-import Cd from '../assets/homeAssets/Caset.png'
+import Cd from "../assets/homeAssets/Caset.png";
 import CreativeDev from "../assets/homeAssets/Cd.svg";
-import FilmReelImage from "../assets/homeAssets/roll.svg";
+import CreativeDevMobile from "../assets/homeAssets/CdM.svg";
+
 import TicketMenuImage from "../assets/homeAssets/TicketMenuimg.png";
 import YellowLight from "../assets/homeAssets/yellowLight.svg";
 import CloseIcon from "../assets/homeAssets/close.svg";
 import SpinReelSound from "../assets/homeAssets/spinaudio.mp3";
+
+import Marquee from "./marquee";
 
 import gsap from "gsap";
 
@@ -115,15 +118,11 @@ const home = () => {
 
   return (
     <>
-      <div
-        id="home"
-        onClick={play}
-        className="home w-full min-h-screen  bg-[#b09762] overflow-x-hidden "
-      >
+      <div id="home" onClick={play} className="home  ">
         {/* Menu */}
         <div
-          className={`menusection w-[40vw] h-[20vw] absolute -right-3 z-10 bg-cover bg-center flex flex-col items-center justify-between p-[2.5vw] gap-[1vw] transition-all ease-in-out duration-1000   ${
-            menuOpen ? "top-0" : "-top-[32vw]"
+          className={`menusection w-[110vw] h-[50vw] md:w-[40vw] md:h-[20vw]  absolute  -right-3 z-10 bg-cover bg-center flex flex-col items-center justify-between p-[2.5vw] gap-[1vw] transition-all ease-in-out duration-1000   ${
+            menuOpen ? "top-0" : "-top-[50vh] md:-top-[50vh] "
           } `}
           style={{
             backgroundImage: `${TicketMenuImage}`,
@@ -133,29 +132,30 @@ const home = () => {
         >
           <img
             ref={lightRef}
-            className="YellowLight absolute w-[18vw] -top-[11vw] left-[12vw] rotate-12"
+            className="YellowLight absolute w-[35vw] md:w-[18vw] -top-[11vw] left-[50vw] md:left-[12vw] rotate-12"
             src={YellowLight}
             alt=""
           />
 
           {/* Menu Items */}
-          <ul className="text-[#fff8e7] dela-gothic-one text-[2vw] flex flex-col items-start -ml-[14vw] mt-[2vw] z-50   ">
-            <li className=" h-[3vw] w-full   overflow-hidden flex flex-col group transition-all  ease-in-out ">
+          <ul className="text-[#fff8e7] dela-gothic-one text-[6vw] md:text-[2vw] flex flex-col items-start -ml-[40vw] mt-[4vh] md:-ml-[14vw] md:mt-[2vw] z-50   ">
+          <li className=" h-[9vw] md:h-[3vw] w-full text-[6vw] md:text-[2vw] overflow-hidden flex flex-col group transition-all  ease-in-out ">
               <a
-                href="/home"
+                href="/home "
                 className="group-hover:-translate-y-[3vw] duration-500 "
               >
                 Home
               </a>
-              <a
-                href="/home"
-                className="group-hover:-translate-y-[3vw] duration-500  "
+              <Link
+                to={"/home"}
+                href="/home "
+                className="group-hover:-translate-y-[3vw] duration-500 "
               >
                 Home
-              </a>
+              </Link>
             </li>
 
-            <li className=" h-[3vw] w-full  overflow-hidden flex flex-col group transition-all  ease-in-out ">
+            <li className=" h-[9vw] md:h-[3vw] w-full text-[6vw] md:text-[2vw] overflow-hidden flex flex-col group transition-all  ease-in-out ">
               <a
                 href="/about "
                 className="group-hover:-translate-y-[3vw] duration-500 "
@@ -171,7 +171,7 @@ const home = () => {
               </Link>
             </li>
 
-            <li className=" h-[3vw] w-full  overflow-hidden flex flex-col group transition-all  ease-in-out ">
+            <li className=" h-[9vw] md:h-[3vw] w-full text-[6vw] md:text-[2vw] overflow-hidden flex flex-col group transition-all  ease-in-out ">
               <a
                 href="/work "
                 className="group-hover:-translate-y-[3vw] duration-500 "
@@ -189,7 +189,7 @@ const home = () => {
           </ul>
 
           {/*Menu Footer Links */}
-          <div className="aeonik-regular text-[#fff8e7] text-[1vw] flex flex-wrap gap-[1.2vw] justify-center z-50 mb-[1vw]">
+          <div className="aeonik-regular text-[#fff8e7] text-[3vw] aeonik-regular md:text-[1vw] flex flex-wrap gap-[1.2vw] justify-center z-50 mb-[4vw] md:mb-[1vw]">
             <a
               href="mailto:aayushigorania@gmail.com"
               target="_blank"
@@ -216,14 +216,14 @@ const home = () => {
             >
               Github
             </a>
-            <span>|</span>
-            <Link to={"/interactive"} className="hover:scale-110">
+            <span className="hidden md:flex">|</span>
+            <Link to={"/interactive"} className="hover:scale-110 hidden md:flex">
               Fun
             </Link>
           </div>
           <img
             onClick={() => setMenuOpen(false)}
-            className="absolute w-[1.2vw] top-[5vw] right-[8vw] cursor-pointer"
+            className="absolute w-[4vw] md:w-[1.2vw] top-[6vh] right-[20vw] md:top-[5vw] md:right-[8vw] cursor-pointer"
             src={CloseIcon}
             alt=""
           />
@@ -259,14 +259,21 @@ const home = () => {
         <section className=" flex items-center justify-center flex-col mt-[10vw]">
           <img
             ref={creativeDevRef}
-            className="w-[73vw] scale-0   CreativeDev select-none"
+            className="w-[73vw] md:w-[73vw] scale-0 hidden md:flex  CreativeDev select-none"
             src={CreativeDev}
             alt="Creative Dev"
           />
+
+          <img
+            className="w-[93vw]  md:hidden  CreativeDev select-none"
+            src={CreativeDevMobile}
+            alt="Creative Dev"
+          />
+
           <img
             src={Cd}
             ref={cdRef}
-            className=" absolute opacity-0  w-[7vw] left-[10vw] top-[39vw] md:top-[36vw] lg:top-[32vw]  xl:top-[28vw] orbitt  "
+            className=" absolute opacity-0 hidden md:flex w-[7vw] left-[10vw] top-[39vw] md:top-[36vw] lg:top-[32vw]  xl:top-[28vw] orbitt  "
             alt=""
           />
           <img
@@ -276,36 +283,16 @@ const home = () => {
             alt=""
           />
 
-          <div className=" aeonik-regular text-[2.2vw] h-fit overflow-hidden  -mt-[2vw] text-[#1f1f1f]">
-            <h1 ref={textRef} className="translate-y-10 text aeonik-regular">
+          <div className=" aeonik-regular text-[4.5vw] md:text-[2.2vw] w-[60%] text-center h-fit overflow-hidden mt-[3vw] md:-mt-[2vw]  lg:-mt-[2vw] text-[#1f1f1f]">
+            <h1 ref={textRef} className="  aeonik-regular">
               Learning, experimenting, and building.
             </h1>
           </div>
         </section>
 
         {/* Marquee */}
-        <div className="relative mt-[68vw] md:mt-[20vw] lg:mt-[7vw] scale-200 md:scale-125 lg:scale-100  w-full marquee">
-          {/* Background Reel Images */}
-          <div className="flex items-center justify-center -z-10">
-            <img className="mt-2" src={FilmReelImage} alt="Film Reel" />
-            <img className="mt-2" src={FilmReelImage} alt="Film Reel" />
-            <img className="mt-2" src={FilmReelImage} alt="Film Reel" />
-          </div>
 
-          {/* Scrolling Text */}
-          <div className="absolute top-[1.5vw] md:top-[2.5vw]  left-0 w-full  whitespace-nowrap ">
-            <div className=" inline-block">
-              {words.map((word, i) => (
-                <h1
-                  className="inline-block mx-[1vw] text-[1.7vw] text-[#FFF8E7] dela-gothic-one"
-                  key={i}
-                >
-                  {word}
-                </h1>
-              ))}
-            </div>
-          </div>
-        </div>
+        <Marquee />
       </div>
     </>
   );

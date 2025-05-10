@@ -107,7 +107,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" className="about bg-[#fff8e7] flex items-start justify-center mt-[4vw]  ">
+    <div id="about" className="about bg-[#fff8e7] flex items-start justify-center mt-[6vh]  ">
       <section className=" flex flex-col items-center justify-center  ">
         <div className="h-fit overflow-hidden ">
           <h1
@@ -120,17 +120,17 @@ const About = () => {
 
         <div
           ref={vintagePaperRef}
-          className="flex opacity-0 items-center   justify-center relative mt-[5vw] md:mt-[0vw] scale-130 md:scale-100"
+          className="flex opacity-0 items-center   justify-center relative mt-[12vw] md:mt-[0vw] scale-150 md:scale-100"
         >
           <img className="w-[55vw] select-none mt-[7vw] md:mt-[0vw] rotate-90 md:rotate-0 scale-110 md:scale-100  " src={VintagePaper} alt="" />
           <img
             ref={posterRef}
-            className="-ml-[14vw] md:-ml[17vw] mb-[14vw] opacity-0 z-10  h-[37vw]   transition-all duration-1000 select-none"
+            className="-ml-[17vw] md:-ml[17vw] mb-[14vw] opacity-0 z-10  h-[37vw]   transition-all duration-1000 select-none"
             src={poster}
             alt="Poster"
           />
 
-          <div className="architects-daughter  absolute top-[13vw]  max-w-[52%] md:max-w-[90%]   left-[9vw] md:left-[7vw]  leading-[2.6vw] md:leading-[2.1vw] tracking-wide text-[#280a05] text-[1.7vw] md:text-[1.4vw] ">
+          <div className="architects-daughter  absolute top-[13vw]  max-w-[50%] md:max-w-[90%]   left-[9vw] md:left-[7vw]  leading-[2.6vw] md:leading-[2.1vw] tracking-wide text-[#280a05] text-[1.7vw] md:text-[1.4vw] ">
             <h1 ref={headingOneRef} className=" translate-y-24 opacity-0">
               Hi, I'm Aayushi — <br /> Designer, developer, and motion
               enthusiast.

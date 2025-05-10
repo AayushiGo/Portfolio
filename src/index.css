@@ -3,6 +3,8 @@
 html,
 body {
   background-color: #fff8e7;
+  overflow-x: hidden;
+  width: fit-content; 
   background-image: url("./assets/background.png");
 }
 
@@ -22,6 +24,7 @@ body {
 .menusection {
   background-image: url("./assets/homeAssets/TicketMenuimg.png");
 }
+
 
 
 
