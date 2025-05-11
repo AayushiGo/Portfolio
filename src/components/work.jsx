@@ -127,7 +127,7 @@ const work = () => {
 
         {/* first */}
 
-        <div className="flex flex-col mt-[30vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
+        <div className="flex flex-col md:flex-row mt-[30vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
           <div
             ref={FirstV}
             className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
@@ -167,7 +167,7 @@ const work = () => {
 
         {/* second */}
 
-        <div className="flex flex-col-reverse mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
+        <div className="flex flex-col-reverse md:flex-row mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
           <div className="max-w-[35vw] mb-[10vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
               <h1 ref={SecondH} className="translate-y-[3vw]">
@@ -204,7 +204,7 @@ const work = () => {
         </div>
 
         {/* third */}
-        <div className="flex flex-col mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100  ">
+        <div className="flex flex-col md:flex-row mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100  ">
           <div
             ref={ThirdV}
             className="translate-y-[7vw] mt-[5vh] -translate-x-[7vw] opacity-0"
@@ -242,7 +242,7 @@ const work = () => {
         </div>
 
         {/* fourthd */}
-        <div className="flex flex-col-reverse mb-[15vw] mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100  ">
+        <div className="flex flex-col-reverse md:flex-row mb-[15vw] mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100  ">
           <div className="max-w-[35vw] mb-[5vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
               <h1 ref={FourthH} className="translate-y-[3vw]">

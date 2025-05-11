@@ -1,11 +1,10 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import Cassete from "../assets/homeAssets/cassete.png";
-import Cd from "../assets/homeAssets/Caset.png";
+import Cassete from "../assets/homeAssets/cassete.avif";
+import Cd from "../assets/homeAssets/Caset.avif";
 import CreativeDev from "../assets/homeAssets/Cd.svg";
 import CreativeDevMobile from "../assets/homeAssets/CdM.svg";
-
 import TicketMenuImage from "../assets/homeAssets/TicketMenuimg.png";
 import YellowLight from "../assets/homeAssets/yellowLight.svg";
 import CloseIcon from "../assets/homeAssets/close.svg";
@@ -19,6 +18,8 @@ const home = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef();
   const creativeDevRef = useRef();
+  const creativeDevMobileRef = useRef();
+
   const textRef = useRef();
   const lightRef = useRef();
   const cdRef = useRef();
@@ -41,6 +42,8 @@ const home = () => {
 
   useEffect(() => {
     const creativeDevElement = creativeDevRef.current;
+    const creativeDevMobileElement = creativeDevMobileRef.current;
+
     const navElement = navRef.current;
     const textElement = textRef.current;
     const cdElement = cdRef.current;
@@ -60,7 +63,7 @@ const home = () => {
           });
 
           tl.fromTo(
-            creativeDevElement,
+            creativeDevMobileElement,
             {
               scale: 0,
             },
@@ -72,22 +75,34 @@ const home = () => {
             }
           );
 
+          tl.fromTo(
+            creativeDevElement,
+            {
+              scale: 0,
+            },
+            {
+              scale: 1,
+              duration: 1,
+
+              ease: "back.out(1.7)",
+            }
+          );
+          tl.to(textElement, {
+            y: 0,
+
+            ease: "power3",
+          });
+
           tl.to(cdElement, {
             opacity: 1,
-            duration: 1,
+
             ease: "back.out(1.7)",
           });
 
           tl.to(casseteElement, {
             opacity: 1,
-            duration: 1,
-            ease: "back.out(1.7)",
-          });
 
-          tl.to(textElement, {
-            y: 0,
-            duration: 0.5,
-            ease: "power3",
+            ease: "back.out(1.7)",
           });
 
           observer.unobserve(entry.target);
@@ -103,10 +118,12 @@ const home = () => {
       repeat: -1,
     });
 
-    if (navElement && creativeDevElement) {
-      observer.observe(navElement && creativeDevElement);
+    if (creativeDevElement) {
+      observer.observe(creativeDevElement);
     }
-
+    if (creativeDevMobileElement) {
+      observer.observe(creativeDevMobileElement);
+    }
     return () => observer.disconnect();
   }, []);
 
@@ -121,7 +138,7 @@ const home = () => {
       <div id="home" onClick={play} className="home  ">
         {/* Menu */}
         <div
-          className={`menusection w-[110vw] h-[50vw] md:w-[40vw] md:h-[20vw]  absolute  -right-3 z-10 bg-cover bg-center flex flex-col items-center justify-between p-[2.5vw] gap-[1vw] transition-all ease-in-out duration-1000   ${
+          className={`menusection w-[110vw] h-[55vw] md:w-[40vw] md:h-[20vw]  absolute  -right-3 z-10 bg-cover bg-center flex flex-col items-center justify-between p-[2.5vw] gap-[1vw] transition-all ease-in-out duration-1000   ${
             menuOpen ? "top-0" : "-top-[50vh] md:-top-[50vh] "
           } `}
           style={{
@@ -139,7 +156,7 @@ const home = () => {
 
           {/* Menu Items */}
           <ul className="text-[#fff8e7] dela-gothic-one text-[6vw] md:text-[2vw] flex flex-col items-start -ml-[40vw] mt-[4vh] md:-ml-[14vw] md:mt-[2vw] z-50   ">
-          <li className=" h-[9vw] md:h-[3vw] w-full text-[6vw] md:text-[2vw] overflow-hidden flex flex-col group transition-all  ease-in-out ">
+            <li className=" h-[9vw] md:h-[3vw] w-full text-[6vw] md:text-[2vw] overflow-hidden flex flex-col group transition-all  ease-in-out ">
               <a
                 href="/home "
                 className="group-hover:-translate-y-[3vw] duration-500 "
@@ -189,7 +206,7 @@ const home = () => {
           </ul>
 
           {/*Menu Footer Links */}
-          <div className="aeonik-regular text-[#fff8e7] text-[3vw] aeonik-regular md:text-[1vw] flex flex-wrap gap-[1.2vw] justify-center z-50 mb-[4vw] md:mb-[1vw]">
+          <div className="aeonik-regular text-[#fff8e7] text-[3vw] aeonik-regular md:text-[1vw] flex flex-wrap gap-[1.2vw] justify-center z-50 mb-[7vw] md:mb-[1vw]">
             <a
               href="mailto:aayushigorania@gmail.com"
               target="_blank"
@@ -217,7 +234,10 @@ const home = () => {
               Github
             </a>
             <span className="hidden md:flex">|</span>
-            <Link to={"/interactive"} className="hover:scale-110 hidden md:flex">
+            <Link
+              to={"/interactive"}
+              className="hover:scale-110 hidden md:flex"
+            >
               Fun
             </Link>
           </div>
@@ -232,7 +252,7 @@ const home = () => {
         {/* Navbar */}
         <nav
           ref={navRef}
-          className="navbar  -translate-y-[13vw] flex items-center justify-between px-7 py-7 md:px-10 md:py-12 "
+          className="navbar  -translate-y-[12vw] flex items-center justify-between px-7 py-7 md:px-10 md:py-12 "
         >
           <h1 className="text-[#87392D] dela-gothic-one cursor-pointer text-sm md:text-xl">
             Aayushi{" "}
@@ -265,6 +285,7 @@ const home = () => {
           />
 
           <img
+            ref={creativeDevMobileRef}
             className="w-[93vw]  md:hidden  CreativeDev select-none"
             src={CreativeDevMobile}
             alt="Creative Dev"
@@ -284,7 +305,7 @@ const home = () => {
           />
 
           <div className=" aeonik-regular text-[4.5vw] md:text-[2.2vw] w-[60%] text-center h-fit overflow-hidden mt-[3vw] md:-mt-[2vw]  lg:-mt-[2vw] text-[#1f1f1f]">
-            <h1 ref={textRef} className="  aeonik-regular">
+            <h1 ref={textRef} className=" translate-y-10  aeonik-regular">
               Learning, experimenting, and building.
             </h1>
           </div>
