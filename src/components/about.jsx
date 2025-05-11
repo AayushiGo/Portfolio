@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
-import poster from "../assets/aboutAssets/poster.svg";
+import poster from "../assets/aboutAssets/poster.png";
 import VintagePaper from "../assets/aboutAssets/vintagepaper.png";
 import stamp from "../assets/aboutAssets/stamp.svg";
 
