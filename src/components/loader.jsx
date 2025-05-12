@@ -79,12 +79,12 @@ const Loader = ({ children }) => {
           <button
             onClick={handleClick}
             ref={buttonRef}
-            className="mt-[2.5vw] scale-0  dela-gothic-one text-[#843F2E] md:flex bg-[#fff8e7] px-2  py-1  text-[1.7vw] md:text-[1.3vw]  shadow-[-2px_2px_0_rgba(0,0,0,1)] md:shadow-[-4px_4px_0_rgba(0,0,0,1)]  cursor-pointer   hover:shadow-[-2px_2px_0_rgba(0,0,0,1)] hover:bg-[#F5EBDD]"
+            className="mt-[2.5vw] scale-0 dela-gothic-one text-[#843F2E] md:flex bg-[#fff8e7] px-2 py-1 text-[1.7vw] md:text-[1.3vw] shadow-[-2px_2px_0_rgba(0,0,0,1)] md:shadow-[-4px_4px_0_rgba(0,0,0,1)] cursor-pointer hover:shadow-[-2px_2px_0_rgba(0,0,0,1)] hover:bg-[#F5EBDD]"
           >
             Enter
           </button>
         </div>
-        <div className="absolute bottom-10 right-10 h-[2.5vw]  overflow-hidden text-[2vw] dela-gothic-one">
+        <div className="absolute bottom-10 right-10 h-[2.5vw] overflow-hidden text-[2vw] dela-gothic-one">
           <div ref={numberRef} className=" transition-all ease">
             <h1>00</h1>
             <h1>23</h1>

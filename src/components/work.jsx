@@ -127,7 +127,8 @@ const work = () => {
 
         {/* first */}
 
-        <div className="flex flex-col md:flex-row mt-[30vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
+        <div className="flex  flex-col md:flex-row mt-[30vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
+          
           <div
             ref={FirstV}
             className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
@@ -148,7 +149,7 @@ const work = () => {
 
           <div className="max-w-[35vw] mb-[10vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
-              <h1 ref={FirstH} className="translate-y-[3vw]">
+              <h1 ref={FirstH} className="translate-y-[3vw] text-center md:text-left">
                 Max Milkin Portfolio Clone
               </h1>
             </div>
@@ -156,11 +157,7 @@ const work = () => {
               ref={FirstP}
               className="text-[1.4vw] translate-y-[5vw] mt-[0.7vw] opacity-0 hidden md:flex"
             >
-              Max Milkin Clone is a portfolio website clone built using React,
-              GSAP for smooth animations, and Tailwind CSS for utility-first
-              styling. The project focuses on replicating the clean, modern
-              aesthetic of Max Milkin's original design. It helped me practice
-              integrating animations and advanced UI effects with React.
+             Cloned Max Milkin’s portfolio website to practice creative web development and animation techniques. Focused on replicating smooth transitions, unique layouts, and bold typography. This project improved my skills in interactive design and modern portfolio aesthetics.
             </p>
           </div>
         </div>
@@ -170,7 +167,7 @@ const work = () => {
         <div className="flex flex-col-reverse md:flex-row mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
           <div className="max-w-[35vw] mb-[10vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
-              <h1 ref={SecondH} className="translate-y-[3vw]">
+              <h1 ref={SecondH} className="translate-y-[3vw] text-center md:text-left">
                 Rain Delay Media Clone
               </h1>
             </div>
@@ -178,10 +175,7 @@ const work = () => {
               ref={SecondP}
               className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0 hidden md:flex"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-              inventore ea fugit nam numquam, doloremque rerum iste recusandae
-              odio ducimus ullam, natus atque amet! Fugit sapiente atque
-              reprehenderit tempore distinctio?
+              Recreated the Rain Delay Media website as a practice project to enhance my creative web development skills. Focused on replicating its bold typography, smooth animations, and dynamic layout. This project helped me explore interactive web experiences and clean, modern design.
             </p>
           </div>
           <div
@@ -225,7 +219,7 @@ const work = () => {
 
           <div className="max-w-[35vw] mb-[10vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
-              <h1 ref={ThirdH} className="translate-y-[3vw]">
+              <h1 ref={ThirdH} className="translate-y-[3vw] text-center md:text-left">
                 Sundow Studio Clone
               </h1>
             </div>
@@ -233,10 +227,7 @@ const work = () => {
               ref={ThirdP}
               className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0 hidden md:flex"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-              inventore ea fugit nam numquam, doloremque rerum iste recusandae
-              odio ducimus ullam, natus atque amet! Fugit sapiente atque
-              reprehenderit tempore distinctio?
+              Sundown Studio Clone is a practice project where I recreated the official Sundown Studio website to sharpen my creative web development skills. The clone focuses on replicating the site’s clean aesthetic, bold typography, and smooth scroll-based animations. 
             </p>
           </div>
         </div>
@@ -245,7 +236,7 @@ const work = () => {
         <div className="flex flex-col-reverse md:flex-row mb-[15vw] mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100  ">
           <div className="max-w-[35vw] mb-[5vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
-              <h1 ref={FourthH} className="translate-y-[3vw]">
+              <h1 ref={FourthH} className="translate-y-[3vw] text-center md:text-left">
                 Nike Reimagine
               </h1>
             </div>
@@ -253,10 +244,7 @@ const work = () => {
               ref={FourthP}
               className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0 hidden md:flex"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-              inventore ea fugit nam numquam, doloremque rerum iste recusandae
-              odio ducimus ullam, natus atque amet! Fugit sapiente atque
-              reprehenderit tempore distinctio?
+             Nike Reimagine is a bold, modern redesign concept that transforms the online Nike experience. Featuring sleek visuals, seamless navigation, and immersive product displays, it connects with today’s dynamic, style-forward audience. It was a hackathon project  
             </p>
           </div>
           <div

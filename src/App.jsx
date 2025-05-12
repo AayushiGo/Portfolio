@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 
 import Loader from "./components/loader";
 import Cursor from "./components/cursor";
@@ -15,6 +20,7 @@ const ScrollToSection = () => {
   useEffect(() => {
     const path = location.pathname;
     const id = path === "/" ? "home" : path.substring(1); // /about → about
+    
 
     const section = document.getElementById(id);
     if (section) {

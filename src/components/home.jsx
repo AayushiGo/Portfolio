@@ -158,14 +158,15 @@ const home = () => {
           <ul className="text-[#fff8e7] dela-gothic-one text-[6vw] md:text-[2vw] flex flex-col items-start -ml-[40vw] mt-[4vh] md:-ml-[14vw] md:mt-[2vw] z-50   ">
             <li className=" h-[9vw] md:h-[3vw] w-full text-[6vw] md:text-[2vw] overflow-hidden flex flex-col group transition-all  ease-in-out ">
               <a
-                href="/home "
+                to={"/home"}
+                href="# "
                 className="group-hover:-translate-y-[3vw] duration-500 "
               >
                 Home
               </a>
               <Link
                 to={"/home"}
-                href="/home "
+                href="#"
                 className="group-hover:-translate-y-[3vw] duration-500 "
               >
                 Home
@@ -174,14 +175,15 @@ const home = () => {
 
             <li className=" h-[9vw] md:h-[3vw] w-full text-[6vw] md:text-[2vw] overflow-hidden flex flex-col group transition-all  ease-in-out ">
               <a
-                href="/about "
+                to={"/about"}
+                href="# "
                 className="group-hover:-translate-y-[3vw] duration-500 "
               >
                 About
               </a>
               <Link
                 to={"/about"}
-                href="/about "
+                href="#"
                 className="group-hover:-translate-y-[3vw] duration-500 "
               >
                 About
@@ -190,14 +192,15 @@ const home = () => {
 
             <li className=" h-[9vw] md:h-[3vw] w-full text-[6vw] md:text-[2vw] overflow-hidden flex flex-col group transition-all  ease-in-out ">
               <a
-                href="/work "
+                to={"/work"}
+                href="# "
                 className="group-hover:-translate-y-[3vw] duration-500 "
               >
                 Work
               </a>
               <Link
                 to={"/work"}
-                href="/work "
+                href="#"
                 className="group-hover:-translate-y-[3vw] duration-500 "
               >
                 Work
@@ -305,7 +308,7 @@ const home = () => {
           />
 
           <div className=" aeonik-regular text-[4.5vw] md:text-[2.2vw] w-[60%] text-center h-fit overflow-hidden mt-[3vw] md:-mt-[2vw]  lg:-mt-[2vw] text-[#1f1f1f]">
-            <h1 ref={textRef} className=" translate-y-10  aeonik-regular">
+            <h1 ref={textRef} className=" translate-y-13  aeonik-regular">
               Learning, experimenting, and building.
             </h1>
           </div>

@@ -25,7 +25,7 @@ const marquee = () => {
      </div>
 
      {/* Scrolling Text */}
-     <div className="absolute top-[1vw] md:top-[2.5vw]  left-0 w-full  whitespace-nowrap ">
+     <div className="absolute top-[1.5vw] md:top-[2.5vw]  left-0 w-full  whitespace-nowrap ">
        <div className=" inline-block">
          {words.map((word, i) => (
            <h1

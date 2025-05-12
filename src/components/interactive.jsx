@@ -203,7 +203,7 @@ const Interactive = () => {
             src={Calendar}
             alt=""
           />
-          <div className="absolute top-[0vw] left-[50vw] md:top-[18vw] md:left-[56vw] text-[1.6vw] md:text-[1vw] flex flex-col items-end justify-center gap-[0.4vw] architects-daughter">
+          <div className="absolute top-[3vw] left-[50vw] md:top-[18vw] md:left-[56vw] text-[1.6vw] md:text-[1vw] flex flex-col items-end justify-center gap-[0.4vw] architects-daughter">
             <h1>Located in India</h1>
             <h1>{time.toLocaleTimeString()}</h1>
             <h1>{time.toLocaleDateString()}</h1>
