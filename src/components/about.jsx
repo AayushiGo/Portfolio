@@ -3,6 +3,8 @@ import gsap from "gsap";
 import poster from "../assets/aboutAssets/poster.png";
 import VintagePaper from "../assets/aboutAssets/vintagepaper.png";
 import stamp from "../assets/aboutAssets/stamp.svg";
+import SpinReelSound from "../assets/homeAssets/spinaudio.mp3";
+
 
 const About = () => {
   const posterRef = useRef();
@@ -106,8 +108,12 @@ const About = () => {
     return () => observer.disconnect();
   }, []);
 
+  function play() {
+    new Audio(SpinReelSound).play();
+  }
+
   return (
-    <div id="about" className="about bg-[#fff8e7] flex items-start justify-center mt-[6vh]  ">
+    <div id="about" onClick={play} className="about bg-[#fff8e7] flex items-start justify-center mt-[6vh]  ">
       <section className=" flex flex-col items-center justify-center  ">
         <div className="h-fit overflow-hidden ">
           <h1

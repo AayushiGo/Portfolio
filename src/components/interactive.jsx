@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import SpinReelSound from "../assets/homeAssets/spinaudio.mp3";
+
 
 import NoticeBoardimg from "../assets/interactiveAssets/noticeboard.png";
 import Flag from "../assets/interactiveAssets/flag.png";
@@ -145,8 +147,12 @@ const Interactive = () => {
     };
   }, []);
 
+  function play() {
+    new Audio(SpinReelSound).play();
+  }
+
   return (
-    <div
+    <div onClick={play}
       id="interactive"
       className="flex items-center scale-105  justify-center overflow-hidden py-[35vw] md:py-[5vw]  mb-[2vw] select-none "
     >

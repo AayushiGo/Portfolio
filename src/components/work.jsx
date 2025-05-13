@@ -5,6 +5,8 @@ import RainDelayVideo from "../assets/workAssets/Rain Delay Media.mp4";
 import MaxMilkinVideo from "../assets/workAssets/max milkin.mp4";
 import NikeVideo from "../assets/workAssets/Nike Reimagine.mp4";
 import filmStripImg from "../assets/workAssets/filmstrip.png";
+import SpinReelSound from "../assets/homeAssets/spinaudio.mp3";
+
 
 const work = () => {
   gsap.registerPlugin();
@@ -110,8 +112,12 @@ const work = () => {
     });
   }, []);
 
+  function play() {
+    new Audio(SpinReelSound).play();
+  }
+
   return (
-    <div
+    <div onClick={play}
       id="work"
       className="about bg-[#fff8e7] flex items-start justify-center mt-[10vh] md:mt-[1vw]  "
     >

@@ -5,6 +5,9 @@ import { useGSAP } from "@gsap/react";
 import logoTop from "../assets/loaderAssets/logo 1.svg";
 import logoBottom from "../assets/loaderAssets/logo2.svg";
 import bgVideo from "../assets/loaderAssets/glitch.mp4";
+import SpinReelSound from "../assets/homeAssets/spinaudio.mp3";
+
+
 
 const Loader = ({ children }) => {
   const loaderPageRef = useRef(null);
@@ -57,9 +60,13 @@ const Loader = ({ children }) => {
     });
   };
 
+  function play() {
+    new Audio(SpinReelSound).play();
+  }
+
   return (
     <>
-      <div
+      <div onClick={play}
         ref={loaderPageRef}
         className="loaderpage fixed inset-0 z-50 bg-black flex flex-col items-center justify-center text-[#FFF8E7]"
       >
