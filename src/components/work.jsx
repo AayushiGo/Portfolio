@@ -135,9 +135,10 @@ const work = () => {
 
         <div className="flex  flex-col md:flex-row mt-[30vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
           
-          <div
+          <div   onClick={() => window.open(" https://max-milkin-portfolio-clone-2wio.vercel.app/", "_blank")}
             ref={FirstV}
-            className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] -translate-x-[7vw] opacity-0 cursor-pointer"
+            
           >
             <img
               className="w-[34vw] absolute  md:-rotate-6 z-10"
@@ -185,8 +186,9 @@ const work = () => {
             </p>
           </div>
           <div
+            onClick={() => window.open("https://rain-delay-media-clone.vercel.app" , "_blank")}
             ref={SecondV}
-            className="translate-y-[7vw] mt-[5vh] translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] mt-[5vh] translate-x-[7vw] opacity-0 cursor-pointer"
           >
             <img
               className="w-[34vw] absolute  md:rotate-6 z-10"
@@ -206,8 +208,9 @@ const work = () => {
         {/* third */}
         <div className="flex flex-col md:flex-row mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100  ">
           <div
+            onClick={() => window.open(" https://sundownclonestudio.netlify.app/" , "_blank")}
             ref={ThirdV}
-            className="translate-y-[7vw] mt-[5vh] -translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] mt-[5vh] -translate-x-[7vw] opacity-0 cursor-pointer"
           >
             <img
               className="w-[34vw] absolute  md:-rotate-6 z-10"
@@ -254,8 +257,9 @@ const work = () => {
             </p>
           </div>
           <div
+            onClick={() => window.open("https://we-are-devs-reimagine-round1.vercel.app/", "_blank")}
             ref={FourthV}
-            className="translate-y-[7vw] mt-[2vh] translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] mt-[2vh] translate-x-[7vw] opacity-0 cursor-pointer"
           >
             <img
               className="w-[34vw] absolute  md:rotate-6 z-10"
