@@ -191,7 +191,7 @@ const Interactive = () => {
             src={Paper}
             alt=""
           />
-          <div className="absolute -top-[6vw]  left-[9.5vw] md:top-[16vw] md:left-[6.7vw] text-[1vw] flex flex-col items-start gap-[0.4vw] architects-daughter md:-rotate-3 rotate-5 ">
+          <div className="absolute -top-[6vw]  left-[9.5vw] md:top-[16vw] md:left-[7.7vw] text-[1vw] flex flex-col items-start gap-[0.4vw] architects-daughter md:-rotate-3 rotate-5 ">
             <h1 className="text-[2vw] md:text-[1.7vw]">Skills</h1>
             <li className="text-[1.2vw] md:text-[1vw]">
               Front-end Development
