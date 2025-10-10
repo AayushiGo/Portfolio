@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import SundeownVideo from "../assets/workAssets/Sundown Studio.mp4";
-import JellyFish from "../assets/workAssets/Jelly Fish.mp4";
+import RainDelayVideo from "../assets/workAssets/Rain Delay Media.mp4";
 import MaxMilkinVideo from "../assets/workAssets/max milkin.mp4";
 import NikeVideo from "../assets/workAssets/Nike Reimagine.mp4";
 import filmStripImg from "../assets/workAssets/filmstrip.png";
@@ -135,10 +135,9 @@ const work = () => {
 
         <div className="flex  flex-col md:flex-row mt-[30vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
           
-          <div   onClick={() => window.open(" https://max-milkin-portfolio-clone-2wio.vercel.app/", "_blank")}
+          <div
             ref={FirstV}
-            className="translate-y-[7vw] -translate-x-[7vw] opacity-0 cursor-pointer"
-            
+            className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
           >
             <img
               className="w-[34vw] absolute  md:-rotate-6 z-10"
@@ -175,20 +174,19 @@ const work = () => {
           <div className="max-w-[35vw] mb-[10vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
               <h1 ref={SecondH} className="translate-y-[3vw] text-center md:text-left">
-                Jelly Fish Particles
+                Rain Delay Media Clone
               </h1>
             </div>
             <p
               ref={SecondP}
               className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0 hidden md:flex"
             >
-              Inspiring from a post on X, i tried creating this jelly fish particles effect in Three.js. The jelly fish moves its tentacles and we can change the speed, pulse effect, color, opacity etc. according to requirements. 
+              Recreated the Rain Delay Media website as a practice project to enhance my creative web development skills. Focused on replicating its bold typography, smooth animations, and dynamic layout. This project helped me explore interactive web experiences and clean, modern design.
             </p>
           </div>
           <div
-            onClick={() => window.open("https://jelly-fish-particles.vercel.app/" , "_blank")}
             ref={SecondV}
-            className="translate-y-[7vw] mt-[5vh] translate-x-[7vw] opacity-0 cursor-pointer"
+            className="translate-y-[7vw] mt-[5vh] translate-x-[7vw] opacity-0"
           >
             <img
               className="w-[34vw] absolute  md:rotate-6 z-10"
@@ -200,7 +198,7 @@ const work = () => {
               muted
               loop
               className="w-[31vw] mt-[2.7vw] ml-[2vw] md:rotate-6 z-0  "
-              src={JellyFish}
+              src={RainDelayVideo}
             ></video>
           </div>
         </div>
@@ -208,9 +206,8 @@ const work = () => {
         {/* third */}
         <div className="flex flex-col md:flex-row mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100  ">
           <div
-            onClick={() => window.open(" https://sundownclonestudio.netlify.app/" , "_blank")}
             ref={ThirdV}
-            className="translate-y-[7vw] mt-[5vh] -translate-x-[7vw] opacity-0 cursor-pointer"
+            className="translate-y-[7vw] mt-[5vh] -translate-x-[7vw] opacity-0"
           >
             <img
               className="w-[34vw] absolute  md:-rotate-6 z-10"
@@ -257,9 +254,8 @@ const work = () => {
             </p>
           </div>
           <div
-            onClick={() => window.open("https://we-are-devs-reimagine-round1.vercel.app/", "_blank")}
             ref={FourthV}
-            className="translate-y-[7vw] mt-[2vh] translate-x-[7vw] opacity-0 cursor-pointer"
+            className="translate-y-[7vw] mt-[2vh] translate-x-[7vw] opacity-0"
           >
             <img
               className="w-[34vw] absolute  md:rotate-6 z-10"
