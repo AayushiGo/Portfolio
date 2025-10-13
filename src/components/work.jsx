@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import SundeownVideo from "../assets/workAssets/Sundown Studio.mp4";
-import RainDelayVideo from "../assets/workAssets/Rain Delay Media.mp4";
+import JellyFish from "../assets/workAssets/Particles.mp4";
 import MaxMilkinVideo from "../assets/workAssets/max milkin.mp4";
 import NikeVideo from "../assets/workAssets/Nike Reimagine.mp4";
 import filmStripImg from "../assets/workAssets/filmstrip.png";
@@ -174,14 +174,14 @@ const work = () => {
           <div className="max-w-[35vw] mb-[10vh] ">
             <div className="dela-gothic-one text-[2vw] text-[#87392D] overflow-hidden  ">
               <h1 ref={SecondH} className="translate-y-[3vw] text-center md:text-left">
-                Rain Delay Media Clone
+                Jelly Fish Particles
               </h1>
             </div>
             <p
               ref={SecondP}
               className="text-[1.5vw] translate-y-[5vw] mt-[0.7vw] opacity-0 hidden md:flex"
             >
-              Recreated the Rain Delay Media website as a practice project to enhance my creative web development skills. Focused on replicating its bold typography, smooth animations, and dynamic layout. This project helped me explore interactive web experiences and clean, modern design.
+              Tried recreating immersive jelly fish using particles in Three.js inspired form a post on X. 
             </p>
           </div>
           <div
@@ -198,7 +198,7 @@ const work = () => {
               muted
               loop
               className="w-[31vw] mt-[2.7vw] ml-[2vw] md:rotate-6 z-0  "
-              src={RainDelayVideo}
+              src={JellyFish}
             ></video>
           </div>
         </div>
