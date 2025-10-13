@@ -138,7 +138,7 @@ const work = () => {
           <div
           onClick={() => window.open(" https://max-milkin-portfolio-clone-2wio.vercel.app/", "_blank")}
             ref={FirstV}
-            className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] -translate-x-[7vw] opacity-0 cursor-pointer"
           >
             <img
               className="w-[34vw] absolute  md:-rotate-6 z-10"
@@ -188,7 +188,7 @@ const work = () => {
           <div
           onClick={() => window.open("https://jelly-fish-particles.vercel.app/" , "_blank")}
             ref={SecondV}
-            className="translate-y-[7vw] mt-[5vh] translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] mt-[5vh] translate-x-[7vw] opacity-0 cursor-pointer"
           >
             <img
               className="w-[34vw] absolute  md:rotate-6 z-10"
@@ -211,7 +211,7 @@ const work = () => {
           <div
            onClick={() => window.open(" https://sundownclonestudio.netlify.app/" , "_blank")}
             ref={ThirdV}
-            className="translate-y-[7vw] mt-[5vh] -translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] mt-[5vh] -translate-x-[7vw] opacity-0 cursor-pointer"
           >
             <img
               className="w-[34vw] absolute  md:-rotate-6 z-10"
@@ -260,7 +260,7 @@ const work = () => {
           <div
           onClick={() => window.open("https://we-are-devs-reimagine-round1.vercel.app/", "_blank")}
             ref={FourthV}
-            className="translate-y-[7vw] mt-[2vh] translate-x-[7vw] opacity-0"
+            className="translate-y-[7vw] mt-[2vh] translate-x-[7vw] opacity-0 cursor-pointer"
           >
             <img
               className="w-[34vw] absolute  md:rotate-6 z-10"
