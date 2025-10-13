@@ -136,6 +136,7 @@ const work = () => {
         <div className="flex  flex-col md:flex-row mt-[30vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100 ">
           
           <div
+          onClick={() => window.open(" https://max-milkin-portfolio-clone-2wio.vercel.app/", "_blank")}
             ref={FirstV}
             className="translate-y-[7vw] -translate-x-[7vw] opacity-0"
           >
@@ -147,7 +148,7 @@ const work = () => {
             <video
               autoPlay
               muted
-              loop
+              loop 
               className="w-[31vw] mt-[2.7vw] ml-[2vw] md:-rotate-6 z-0  "
               src={MaxMilkinVideo}
             ></video>
@@ -185,6 +186,7 @@ const work = () => {
             </p>
           </div>
           <div
+          onClick={() => window.open("https://jelly-fish-particles.vercel.app/" , "_blank")}
             ref={SecondV}
             className="translate-y-[7vw] mt-[5vh] translate-x-[7vw] opacity-0"
           >
@@ -197,6 +199,7 @@ const work = () => {
               autoPlay
               muted
               loop
+              
               className="w-[31vw] mt-[2.7vw] ml-[2vw] md:rotate-6 z-0  "
               src={JellyFish}
             ></video>
@@ -206,6 +209,7 @@ const work = () => {
         {/* third */}
         <div className="flex flex-col md:flex-row mt-[15vw] md:mt-[10vw] gap-[4vw]  md:gap-[9vw] scale-200 md:scale-110 lg:scale-100  ">
           <div
+           onClick={() => window.open(" https://sundownclonestudio.netlify.app/" , "_blank")}
             ref={ThirdV}
             className="translate-y-[7vw] mt-[5vh] -translate-x-[7vw] opacity-0"
           >
@@ -254,6 +258,7 @@ const work = () => {
             </p>
           </div>
           <div
+          onClick={() => window.open("https://we-are-devs-reimagine-round1.vercel.app/", "_blank")}
             ref={FourthV}
             className="translate-y-[7vw] mt-[2vh] translate-x-[7vw] opacity-0"
           >
